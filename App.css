@@ -1,0 +1,209 @@
+*{
+  font-family: "Roboto condensed",sans-serif;
+}
+body{
+  background-image: url('assets/bg-5.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin:0;
+  padding:0;
+  height: 100vh;
+  width:100vh;
+  
+}
+.container{
+  width: 350px;
+  padding: 25px;
+  background-color:#fff ;
+  border-radius: 8px;
+ /* box-shadow: 0 4px 15px rgba(26, 36, 42, 0.1); */
+
+}
+
+.whole-container {
+  width: 90%;
+  max-width: 400px;
+  margin:0 auto;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+
+  /* Center horizontally and vertically */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  box-shadow: 0 4px 12px rgba(9, 14, 17, 0.1);
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 768px) {
+  .whole-container {
+    width: 90%;
+    padding: 15px;
+  }
+}
+
+.input-container{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border: 3px solid #70e6f3;
+  border-radius: 10px;
+  overflow: auto;
+
+}
+img{
+  width:19%;
+  margin-left: 75%;
+  margin-top: 5px;
+  object-fit: contain;
+}
+
+.city-input{
+  flex:1;
+  height: none;
+  border:none;
+  font-size:18px;
+  outline: none;
+  padding: 10px;
+
+}
+
+.search-icon{
+  padding: 10px;
+  height:30px;
+  cursor:pointer;
+
+}
+.image{
+  text-align: center;
+  height:170px;
+  width:150px;
+  margin-bottom: 20px;
+  gap:10px;
+}
+.image img{
+ width:170px;
+ height:170px;
+ margin-top: 8px;
+ margin-right:5px;
+ margin-left: 95px;
+
+}
+
+.temp,
+.location,
+.country{
+  margin-top:5px;
+  font-size: 35px;
+  color: #333;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.temp{
+  font-weight: 550;
+
+}
+.location{
+  color: #ffbc00;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.country{
+  font-size: 18px;
+  color: #888;
+  font-weight: 500;
+}
+.cord{
+display: flex;
+justify-content: center;
+align-items: center;
+gap:10px;
+margin-top: 10px;
+text-align: center;
+}
+
+.cord div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+
+}
+.cord div span{
+  font-size: 14px;
+}
+.cord div span:nth-child(2){
+font-size: 18px;
+font-weight: bold;
+color: #666;
+padding-top: 5px;
+}
+
+.data-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;   /* pushes humidity left, wind right */
+  margin-top: 20px;
+}
+
+.element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* centres icon + text vertically */
+  text-align: center;
+  font-size: 20px;
+  color: #333;
+}
+
+.element img,
+.humidity-icon,
+.wind-icon {
+  width:26px;
+  height:26px;
+  object-fit: contain;
+  margin-bottom: 4px;
+  margin-left: 10px;
+}
+
+.humidity-percent,
+.wind-percent {
+  font-weight: 800;
+  margin-bottom: 2px;
+}
+.element{
+  text-align: center;
+  
+}
+.copyright{
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+}
+.copyright span{
+  color: #333;
+}
+
+.city-not-found,
+.loading-mes,
+.error-mes{
+  margin-top:10px;
+  color:#888;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+
+
+
+}
+
+
+
+
+
+
